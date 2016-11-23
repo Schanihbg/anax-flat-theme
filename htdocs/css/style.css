@@ -416,65 +416,6 @@ template {
   display: none;
 }
 /**
- * Regions, basics to show off the regions.
- */
-.footer-column {
-  float: left;
-  width: 33%;
-}
-.footer-column-wrapper {
-  overflow: auto;
-}
-.sidebar {
-  width: 33%;
-  float: left;
-}
-.main .has-sidebar {
-  width: 67%;
-  float: left;
-}
-.site-footer {
-  text-align: center;
-}
-.site-footer ul {
-  margin: 0;
-  padding: 0;
-  list-type: none;
-}
-.site-footer li {
-  display: inline;
-}
-.footer-column ul {
-  margin: 0;
-  padding: 1em;
-  list-style-type: circle;
-}
-.next-previous .next,
-.next-previous .previous {
-  width: 50%;
-}
-.next-previous .next {
-  float: right;
-  text-align: right;
-}
-.breadcrumb {
-  margin-bottom: 22px;
-}
-.breadcrumb ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.breadcrumb li {
-  display: inline;
-}
-.breadcrumb li::after {
-  content: " » ";
-}
-.site-header {
-  position: relative;
-}
-/**
  * Style for responsive menu
  */
 /**
@@ -783,6 +724,313 @@ img {
 .profile {
   float: left;
 }
+/**
+ * Responsive Grid
+ */
+/**
+ * A small clearfix:
+ * http://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
+ */
+/**
+ * Wrap grid in a container.
+ */
+/**
+ * All columns must be wrapped in a row.
+ */
+/**
+ * Create a column spanning @col columns.
+ */
+/**
+ * Push a column @offset columns.
+ */
+/**
+ * Pull a column left @offset columns.
+ */
+/**
+ * Pull a column right @offset columns.
+ */
+.row {
+  /*width: @totalWidth / @gridSystemWidth * (@gridSystemWidth + @gutterWidth);*/
+  /*margin-left:  -1 * @totalWidth / @gridSystemWidth * @gutterWidth / 2;*/
+  display: block;
+  /*width: @totalWidth / @gridSystemWidth * (@gridSystemWidth + @gutterWidth);*/
+  /*margin-left:  -1 * @totalWidth / @gridSystemWidth * @gutterWidth / 2;*/
+  margin-right: -1.04166667%;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header,
+.flash,
+.footer {
+  display: inline;
+  float: left;
+  width: 97.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.main {
+  display: inline;
+  float: left;
+  width: 72.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.sidebar {
+  display: inline;
+  float: left;
+  width: 22.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.triptych {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.info {
+  display: inline;
+  float: left;
+  width: 22.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.pushit {
+  display: inline;
+  float: left;
+  width: 22.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+  margin-left: 26.04166667%;
+}
+.pull-left {
+  display: inline;
+  float: left;
+  width: 14.58333333%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+  margin-left: -15.625%;
+}
+.pull-right {
+  display: inline;
+  float: left;
+  width: 14.58333333%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+  margin-right: -15.625%;
+}
+.full-width {
+  display: inline;
+  float: left;
+  width: 97.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.column-a {
+  display: inline;
+  float: left;
+  width: 47.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+  margin-left: 26.04166667%;
+}
+.column-b {
+  display: inline;
+  float: left;
+  width: 22.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+  margin-right: -73.95833333%;
+}
+.column-c {
+  display: inline;
+  float: left;
+  width: 22.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+  margin-left: -73.95833333%;
+}
+.col-nested {
+  display: inline;
+  float: left;
+  width: 64.58333333%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.row-nested {
+  display: block;
+  /*width: @totalWidth / @gridSystemWidth * (@gridSystemWidth + @gutterWidth);*/
+  /*margin-left:  -1 * @totalWidth / @gridSystemWidth * @gutterWidth / 2;*/
+  margin-right: -1.5625%;
+}
+.row-nested::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.block {
+  display: inline;
+  float: left;
+  width: 46.875%;
+  margin-left: 1.5625%;
+  margin-right: 1.5625%;
+}
+.col {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+@media (max-width: 1150px) {
+  .pull-left,
+  .pull-right {
+    display: none;
+  }
+}
+@media (max-width: 980px) {
+  .wrap {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 800px) {
+  .info {
+    display: inline;
+    float: left;
+    width: 47.91666667%;
+    margin-left: 1.04166667%;
+    margin-right: 1.04166667%;
+  }
+}
+@media (max-width: 700px) {
+  .main,
+  .triptych {
+    display: inline;
+    float: left;
+    width: 97.91666667%;
+    margin-left: 1.04166667%;
+    margin-right: 1.04166667%;
+  }
+  .sidebar,
+  .info {
+    display: none;
+  }
+}
+.row {
+  /*width: @totalWidth / @gridSystemWidth * (@gridSystemWidth + @gutterWidth);*/
+  /*margin-left:  -1 * @totalWidth / @gridSystemWidth * @gutterWidth / 2;*/
+  display: block;
+  /*width: @totalWidth / @gridSystemWidth * (@gridSystemWidth + @gutterWidth);*/
+  /*margin-left:  -1 * @totalWidth / @gridSystemWidth * @gutterWidth / 2;*/
+  margin-right: -1.04166667%;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header,
+.flash,
+.footer {
+  display: inline;
+  float: left;
+  width: 97.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.main {
+  display: inline;
+  float: left;
+  width: 72.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.sidebar {
+  display: inline;
+  float: left;
+  width: 22.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.triptych {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+.info {
+  display: inline;
+  float: left;
+  width: 22.91666667%;
+  margin-left: 1.04166667%;
+  margin-right: 1.04166667%;
+}
+@media (max-width: 1150px) {
+  .pull-left,
+  .pull-right {
+    display: none;
+  }
+}
+@media (max-width: 980px) {
+  .inner-wrap {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 800px) {
+  .info {
+    display: inline;
+    float: left;
+    width: 47.91666667%;
+    margin-left: 1.04166667%;
+    margin-right: 1.04166667%;
+  }
+}
+@media (max-width: 700px) {
+  .main,
+  .triptych {
+    display: inline;
+    float: left;
+    width: 97.91666667%;
+    margin-left: 1.04166667%;
+    margin-right: 1.04166667%;
+  }
+  .sidebar,
+  .info {
+    display: none;
+  }
+}
+/**
+ * Show grid.
+ */
+.route-grid .inner-wrap.inner-wrap-main {
+  background: url(../img/grid/grid960x12x60x20.png) repeat-y fixed center center;
+  background-size: 100% auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+@media (min-width: 960px) {
+  .route-grid .inner-wrap.inner-wrap-main {
+    background-size: 960px auto;
+  }
+}
 html {
   font-family: 'Roboto', sans-serif;
   overflow-y: scroll;
@@ -797,22 +1045,6 @@ a {
 }
 .wrap-all {
   background-color: #f1f1f1;
-}
-.inner-wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1100px;
-}
-.row {
-  display: block;
-  width: 101.04166667%;
-  margin-left: -0.52083333%;
-  margin-right: -0.52083333%;
-}
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 .outer-wrap.outer-wrap-header,
 .outer-wrap.outer-wrap-flash,
@@ -1032,16 +1264,34 @@ pre.hljs {
 .site-footer a {
   color: inherit;
 }
-.main.has-sidebar-left {
-  display: inline;
+.footer-column {
   float: left;
-  box-sizing: border-box;
-  width: 65.625%;
-  margin-left: .52083333%;
-  margin-right: .52083333%;
-  margin-left: 4.6875%;
+  width: 33%;
 }
-.sidebar-left,
-.sidebar-right {
-  width: 28.125%;
+.footer-column-wrapper {
+  overflow: auto;
+}
+.site-footer {
+  text-align: center;
+}
+.site-footer ul {
+  margin: 0;
+  padding: 0;
+  list-type: none;
+}
+.site-footer li {
+  display: inline;
+}
+.footer-column ul {
+  margin: 0;
+  padding: 1em;
+  list-style-type: circle;
+}
+.next-previous .next,
+.next-previous .previous {
+  width: 50%;
+}
+.next-previous .next {
+  float: right;
+  text-align: right;
 }
