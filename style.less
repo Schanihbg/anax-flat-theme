@@ -5,6 +5,8 @@
 @import url(modules.less);
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@maxWidth: 960px;
+
 html {
     font-family: 'Roboto', sans-serif;
     overflow-y: scroll
@@ -24,6 +26,10 @@ a {
     background-color: #f1f1f1;
 }
 
+.inner-wrap {
+    max-width: @maxWidth - 10;
+}
+
 .outer-wrap.outer-wrap-header,
 .outer-wrap.outer-wrap-flash,
 .outer-wrap.outer-wrap-breadcrumb,
@@ -31,7 +37,7 @@ a {
 .outer-wrap.outer-wrap-after-main,
 .inner-wrap.inner-wrap-footer {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: @maxWidth;
 }
 
 /* Navbar */

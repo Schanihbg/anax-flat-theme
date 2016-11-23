@@ -877,13 +877,9 @@ img {
   display: block;
   clear: both;
 }
-.block {
-  display: inline;
-  float: left;
-  width: 46.875%;
-  margin-left: 1.5625%;
-  margin-right: 1.5625%;
-}
+/*.block {
+    .column(4, 8);
+}*/
 .col {
   display: inline;
   float: left;
@@ -981,18 +977,6 @@ img {
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
 }
-@media (max-width: 1150px) {
-  .pull-left,
-  .pull-right {
-    display: none;
-  }
-}
-@media (max-width: 980px) {
-  .inner-wrap {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-}
 @media (max-width: 800px) {
   .info {
     display: inline;
@@ -1031,6 +1015,364 @@ img {
     background-size: 960px auto;
   }
 }
+.route-typography .inner-wrap.inner-wrap-main {
+  font: 100.01%/1.375 Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url(../img/grid/horisontal-grid-22.png);
+}
+.route-typography .inner-wrap.inner-wrap-main h1,
+.route-typography .inner-wrap.inner-wrap-main h2,
+.route-typography .inner-wrap.inner-wrap-main h3,
+.route-typography .inner-wrap.inner-wrap-main h4,
+.route-typography .inner-wrap.inner-wrap-main h5,
+.route-typography .inner-wrap.inner-wrap-main h6 {
+  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.route-typography .inner-wrap.inner-wrap-main h1 img,
+.route-typography .inner-wrap.inner-wrap-main h2 img,
+.route-typography .inner-wrap.inner-wrap-main h3 img,
+.route-typography .inner-wrap.inner-wrap-main h4 img,
+.route-typography .inner-wrap.inner-wrap-main h5 img,
+.route-typography .inner-wrap.inner-wrap-main h6 img {
+  margin: 0;
+}
+.route-typography .inner-wrap.inner-wrap-main h1 {
+  font-size: 2.375em;
+  line-height: 1.15789474;
+  font-weight: normal;
+  border-bottom: 1px solid #666;
+  margin-bottom: 21px;
+}
+.route-typography .inner-wrap.inner-wrap-main h1 ~ h1,
+.route-typography .inner-wrap.inner-wrap-main h1 ~ h2,
+.route-typography .inner-wrap.inner-wrap-main h1 ~ h3,
+.route-typography .inner-wrap.inner-wrap-main h1 ~ h4,
+.route-typography .inner-wrap.inner-wrap-main h1 ~ h5,
+.route-typography .inner-wrap.inner-wrap-main h1 ~ h6 {
+  margin-top: 44px;
+}
+.route-typography .inner-wrap.inner-wrap-main h1 + h2 {
+  margin-top: 22px;
+}
+.route-typography .inner-wrap.inner-wrap-main h2 {
+  font-size: 1.875em;
+  line-height: 1.46666667;
+  font-weight: normal;
+  margin-top: 44px;
+  margin-bottom: 21px;
+  border-bottom: 1px solid #999;
+}
+.route-typography .inner-wrap.inner-wrap-main h2 + h3 {
+  margin-top: 22px;
+}
+.route-typography .inner-wrap.inner-wrap-main h3 {
+  font-size: 1.375em;
+  line-height: 1;
+  font-weight: normal;
+}
+.route-typography .inner-wrap.inner-wrap-main h4 {
+  font-size: 1.25em;
+  line-height: 1.1;
+  font-weight: normal;
+}
+.route-typography .inner-wrap.inner-wrap-main h5 {
+  font-size: 1em;
+  line-height: 1.375;
+}
+.route-typography .inner-wrap.inner-wrap-main h6 {
+  font-size: 0.875em;
+  line-height: 1.57142857;
+}
+.route-typography .inner-wrap.inner-wrap-main p {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.route-typography .inner-wrap.inner-wrap-main small,
+.route-typography .inner-wrap.inner-wrap-main .small,
+.route-typography .inner-wrap.inner-wrap-main .smaller {
+  font-size: 0.875em;
+}
+.route-typography .inner-wrap.inner-wrap-main strong,
+.route-typography .inner-wrap.inner-wrap-main b {
+  font-weight: bold;
+}
+.route-typography .inner-wrap.inner-wrap-main mark {
+  color: #000;
+  background-color: #ffff99;
+}
+.route-typography .inner-wrap.inner-wrap-main abbr[title],
+.route-typography .inner-wrap.inner-wrap-main dfn[title] {
+  text-decoration: dotted underline;
+}
+.route-typography .inner-wrap.inner-wrap-main em,
+.route-typography .inner-wrap.inner-wrap-main i,
+.route-typography .inner-wrap.inner-wrap-main dfn {
+  font-style: italic;
+}
+.route-typography .inner-wrap.inner-wrap-main sub,
+.route-typography .inner-wrap.inner-wrap-main sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.route-typography .inner-wrap.inner-wrap-main sup {
+  top: -0.5em;
+}
+.route-typography .inner-wrap.inner-wrap-main sub {
+  bottom: -0.25em;
+}
+.route-typography .inner-wrap.inner-wrap-main blockquote {
+  border-left: 4px solid #eee;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-bottom: 22px;
+}
+.route-typography .inner-wrap.inner-wrap-main pre,
+.route-typography .inner-wrap.inner-wrap-main code,
+.route-typography .inner-wrap.inner-wrap-main kbd,
+.route-typography .inner-wrap.inner-wrap-main samp,
+.route-typography .inner-wrap.inner-wrap-main .code {
+  font-size: 1.25em;
+  font-family: monospace;
+}
+.route-typography .inner-wrap.inner-wrap-main code,
+.route-typography .inner-wrap.inner-wrap-main samp {
+  border: 1px solid #ccc;
+}
+.route-typography .inner-wrap.inner-wrap-main code {
+  background-color: #eee;
+}
+.route-typography .inner-wrap.inner-wrap-main pre,
+.route-typography .inner-wrap.inner-wrap-main div.code,
+.route-typography .inner-wrap.inner-wrap-main pre code {
+  font-size: 1.25em;
+  line-height: 1.6;
+  white-space: pre;
+}
+.route-typography .inner-wrap.inner-wrap-main pre {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.route-typography .inner-wrap.inner-wrap-main pre code {
+  display: block;
+  overflow: auto;
+}
+.route-typography .inner-wrap.inner-wrap-main div.code,
+.route-typography .inner-wrap.inner-wrap-main pre code {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 0.5em;
+  background-color: #eee;
+}
+.route-typography .inner-wrap.inner-wrap-main ul,
+.route-typography .inner-wrap.inner-wrap-main ol {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  padding-left: 1.5em;
+}
+.route-typography .inner-wrap.inner-wrap-main ul p,
+.route-typography .inner-wrap.inner-wrap-main ol p {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.route-typography .inner-wrap.inner-wrap-main ul ul,
+.route-typography .inner-wrap.inner-wrap-main ol ul,
+.route-typography .inner-wrap.inner-wrap-main ul ol,
+.route-typography .inner-wrap.inner-wrap-main ol ol {
+  margin: 0;
+}
+.route-typography .inner-wrap.inner-wrap-main ul {
+  list-style-type: disc;
+}
+.route-typography .inner-wrap.inner-wrap-main ol {
+  list-style-type: decimal;
+}
+.route-typography .inner-wrap.inner-wrap-main dl {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.route-typography .inner-wrap.inner-wrap-main dl.horizontal dt {
+  clear: left;
+  float: left;
+  width: 7em;
+}
+.route-typography .inner-wrap.inner-wrap-main dl.horizontal dd {
+  margin-left: 8em;
+  display: block;
+}
+.route-typography .inner-wrap.inner-wrap-main dd {
+  margin-left: 1.5em;
+}
+.route-typography .inner-wrap.inner-wrap-main article table,
+.route-typography .inner-wrap.inner-wrap-main .table,
+.route-typography .inner-wrap.inner-wrap-main .table1,
+.route-typography .inner-wrap.inner-wrap-main .table2 {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.route-typography .inner-wrap.inner-wrap-main table.full-width,
+.route-typography .inner-wrap.inner-wrap-main article .table,
+.route-typography .inner-wrap.inner-wrap-main .table,
+.route-typography .inner-wrap.inner-wrap-main .table2 {
+  width: 100%;
+}
+.route-typography .inner-wrap.inner-wrap-main article table,
+.route-typography .inner-wrap.inner-wrap-main .table,
+.route-typography .inner-wrap.inner-wrap-main .table2 {
+  border-collapse: collapse;
+}
+.route-typography .inner-wrap.inner-wrap-main article table caption,
+.route-typography .inner-wrap.inner-wrap-main .table caption,
+.route-typography .inner-wrap.inner-wrap-main .table2 caption {
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  text-align: left;
+  font-style: italic;
+}
+.route-typography .inner-wrap.inner-wrap-main article table thead,
+.route-typography .inner-wrap.inner-wrap-main .table thead,
+.route-typography .inner-wrap.inner-wrap-main .table2 thead {
+  box-shadow: 0 1px 0 #aaa;
+}
+.route-typography .inner-wrap.inner-wrap-main article table th,
+.route-typography .inner-wrap.inner-wrap-main .table th,
+.route-typography .inner-wrap.inner-wrap-main .table2 th {
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: left;
+}
+.route-typography .inner-wrap.inner-wrap-main article table th,
+.route-typography .inner-wrap.inner-wrap-main .table th,
+.route-typography .inner-wrap.inner-wrap-main .table2 th,
+.route-typography .inner-wrap.inner-wrap-main article table td,
+.route-typography .inner-wrap.inner-wrap-main .table td,
+.route-typography .inner-wrap.inner-wrap-main .table2 td {
+  padding: 5.5px;
+}
+.route-typography .inner-wrap.inner-wrap-main article table tr,
+.route-typography .inner-wrap.inner-wrap-main .table tr,
+.route-typography .inner-wrap.inner-wrap-main .table2 tr {
+  box-shadow: 0 1px 0 #ccc;
+}
+.route-typography .inner-wrap.inner-wrap-main article table tr:hover,
+.route-typography .inner-wrap.inner-wrap-main .table tr:hover,
+.route-typography .inner-wrap.inner-wrap-main .table2 tr:hover {
+  color: #000;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 0 #666;
+}
+.route-typography .inner-wrap.inner-wrap-main table.striped tbody tr:nth-child(even) td,
+.route-typography .inner-wrap.inner-wrap-main table.striped tbody tr.even td {
+  background-color: #fafafa;
+}
+.route-typography .inner-wrap.inner-wrap-main hr {
+  position: relative;
+  top: -2px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 32px;
+  margin-bottom: 33px;
+}
+.route-typography .inner-wrap.inner-wrap-main hr:after {
+  content: "§";
+  position: relative;
+  top: -0.7em;
+  left: 50%;
+  padding: 0 0.25em;
+  background-color: #fff;
+}
+/**
+ * Typographic font families to choose from. 
+ */
+/**
+ * Default font-families
+ */
+/**
+ * Typographic sizes for horisontal rythm. 
+ */
+/**
+ * Magic number for vertical rythm
+ * @magicNumber = @fontSizeBody * @lineHeight
+ */
+/* 16px - 100%/1.375 */
+/**
+ * Size and lineheight calculation for magicNumber 24
+ *
+ * 3em     * 16px   = 48 => line-height: 48    = 1
+ * 2.875em * 16px   = 46 => line-height: 48/44 = 1.0435
+ * 2.75em  * 16px   = 44 => line-height: 48/44 = 1.0909
+ * 2.625em * 16px   = 42 => line-height: 48/42 = 1.1429
+ * 2.5em   * 16px   = 40 => line-height: 48/40 = 1.2
+ * 2.375em * 16px   = 38 => line-height: 48/38 = 1.2632
+ * 2.25em  * 16px   = 36 => line-height: 48/36 = 1.3333
+ * 2.125em * 16px   = 34 => line-height: 48/34 = 1.4118
+ * 2em     * 16px   = 32 => line-height: 48/32 = 1.5
+ * 1.875em * 16px   = 30 => line-height: 48/30 = 1.6
+ * 1.75em  * 16px   = 28 => line-height: 48/28 = 1.7143
+ * 1.625em * 16px   = 26 => line-height: 48/26 = 1.8462
+ * 1.5em   * 16px   = 24 => line-height: 24    = 1
+ * 1.375em * 16px   = 22 => line-height: 24/22 = 1.0909
+ * 1.25em  * 16px   = 20 => line-height: 24/20 = 1.2
+ * 1.125em * 16px   = 18 => line-height: 24/18 = 1.3333
+ * 1em     * 16px   = 16 => line-height: 24/16 = 1.5
+ * 0.875em * 16px   = 14 => line-height: 24/14 = 1.7143
+ * 0.75em  * 16px   = 12 => line-height: 24/12 = 2
+ */
+/**
+ * Size and lineheight calculation for magicNumber 22
+ *
+ * 3em     * 16px   = 48 => line-height: 66/48 = 1.375
+ * 2.875em * 16px   = 46 => line-height: 66/46 = 1.4348
+ * 2.75em  * 16px   = 44 => line-height: 44    = 1
+ * 2.625em * 16px   = 42 => line-height: 44/42 = 1.0476
+ * 2.5em   * 16px   = 40 => line-height: 44/40 = 1.1
+ * 2.375em * 16px   = 38 => line-height: 44/38 = 1.1579
+ * 2.25em  * 16px   = 36 => line-height: 44/36 = 1.2222
+ * 2.125em * 16px   = 34 => line-height: 44/34 = 1.2941
+ * 2em     * 16px   = 32 => line-height: 44/32 = 1.375
+ * 1.875em * 16px   = 30 => line-height: 44/30 = 1.4667
+ * 1.75em  * 16px   = 28 => line-height: 44/28 = 1.5714
+ * 1.625em * 16px   = 26 => line-height: 44/26 = 1.6923
+ * 1.5em   * 16px   = 24 => line-height: 44/24 = 1.8333
+ * 1.375em * 16px   = 22 => line-height: 22    = 1
+ * 1.25em  * 16px   = 20 => line-height: 22/20 = 1.1
+ * 1.125em * 16px   = 18 => line-height: 22/18 = 1.2222
+ * 1em     * 16px   = 16 => line-height: 22/16 = 1.375
+ * 0.875em * 16px   = 14 => line-height: 22/14 = 1.5714
+ * 0.75em  * 16px   = 12 => line-height: 22/12 = 1.8333
+*/
+/**
+ * Typographic mixins.
+ */
+/**
+ * Typographic defaults.
+ */
+/**
+ * Headings
+ */
+/**
+ * Text elements
+ */
+/**
+ * Display source code.
+ */
+/**
+ * Lists
+ */
+/**
+ * Tables. Because of the need for padding on TH and TD, the vertical rhythm
+ * on table cells has to be 1.5*@magic-number.
+ */
+/**
+ * More typography elements
+ */
 html {
   font-family: 'Roboto', sans-serif;
   overflow-y: scroll;
@@ -1045,6 +1387,9 @@ a {
 }
 .wrap-all {
   background-color: #f1f1f1;
+}
+.inner-wrap {
+  max-width: 950px;
 }
 .outer-wrap.outer-wrap-header,
 .outer-wrap.outer-wrap-flash,
