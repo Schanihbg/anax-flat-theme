@@ -32,9 +32,10 @@
 /**
  * Wrap grid in a container.
  */
-.container() {
+.container(@maxWidth) {
     margin-right: auto;
     margin-left: auto;
+    max-width: @maxWidth;
 }
 
 
@@ -45,9 +46,9 @@
 .row(@columns: @columns) {
     display: block;
 
-    /*width: @totalWidth / @gridSystemWidth * (@gridSystemWidth + @gutterWidth);*/
+    width: @totalWidth / @gridSystemWidth * (@gridSystemWidth + @gutterWidth);
 
-    /*margin-left:  -1 * @totalWidth / @gridSystemWidth * @gutterWidth / 2;*/
+    margin-left:  -1 * @totalWidth / @gridSystemWidth * @gutterWidth / 2;
     margin-right: -1 * @totalWidth / @gridSystemWidth * @gutterWidth / 2;
 
     .clearfix();
