@@ -297,3 +297,29 @@ pre.hljs {
         text-align: right;
     }
 }
+
+.route-blogg .sidebar .block h4 {
+    border-bottom: 1px solid black;
+}
+
+.route-blogg .blog-list,
+[class*="route-blogg-"] .blog-post {
+    & .meta-header,
+    & .meta-footer {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    & .meta-header {
+        color: green;
+    }
+
+    & .meta-footer {
+        color: grey;
+        &::before {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+}
