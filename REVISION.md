@@ -1,5 +1,11 @@
 #Revisions
 
+v6.0.0 (2017-11-26)
+-------------------------------
+
+* Added design principle themes
+* Added design element themes
+
 v5.0.0 (2016-12-29)
 -------------------------------
 
