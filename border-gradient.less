@@ -1,0 +1,39 @@
+/** 
+* Border-gradient theme.
+*/
+
+@import url(style.less);
+
+.wrap-all {
+    background: -moz-linear-gradient(270deg, #99DAFF 0%, #008080 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #99DAFF), color-stop(100%, #008080));
+    background: -webkit-linear-gradient(270deg, #99DAFF 0%, #008080 100%);
+    background: -o-linear-gradient(270deg, #99DAFF 0%, #008080 100%);
+    background: -ms-linear-gradient(270deg, #99DAFF 0%, #008080 100%);
+    background: linear-gradient(180deg, #99DAFF 0%, #008080 100%);
+    background-color: #99DAFF;
+}
+
+.inner-wrap {
+    &.inner-wrap-header {
+        border-top: black solid;
+        border-left: black solid;
+        border-right: black solid;
+        background-color: #f1f1f1;
+        border: black solid;
+    }
+
+    &.inner-wrap-main {
+        border-left: black solid;
+        border-right: black solid;
+        background-color: #f1f1f1;
+        border: black solid;
+    }
+
+    &.inner-wrap-footer {
+        border-left: black solid;
+        border-right: black solid;
+        border-bottom: black solid;
+        border: black solid;
+    }
+}
